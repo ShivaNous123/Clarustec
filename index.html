@@ -36,14 +36,47 @@
       </a>
 
       <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="index.html">ABOUT US</a></li>
-          <li><a href="#about">SERVICES</a></li>
-          <li><a href="#services">STAFFING</a></li>
-          <li><a href="#portfolio">COMPETENCY</a></li>
-          <li><a href="#team">TEXAS-DIR</a></li>
-          <li><a href="">CAREERS</a></li>
-          <li><a href="#contact">CONTACT US</a></li>
+        <ul id="myDIV" class="nav-fam">
+          <li class="active lists"><a href="index.html">ABOUT US</a></li>
+          <li class="lists">
+            <div class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              SERVICES
+            </div>
+            <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">APPLICATION SERVICES</a>
+              <a class="dropdown-item" href="#">PRODUCT ENGINEERING</a>
+              <a class="dropdown-item" href="#">TESTING</a>
+              <a class="dropdown-item" href="#">INFRASTRUCTURE MANAGEMENT</a>
+              <a class="dropdown-item" href="#">AGILE DEVELOPMENT</a>
+            </ul>
+          </li>
+          <li class="lists">
+            <div class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              STAFFING
+            </div>
+            <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">IT CONTRACT STAFFING</a>
+              <a class="dropdown-item" href="#">FULL-TIME HIRING</a>
+            </ul>
+          </li>
+          <li class="lists">
+            <div class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              COMPETENCY
+            </div>
+            <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">DIGITAL </a>
+              <a class="dropdown-item" href="#">CLOUD</a>
+              <a class="dropdown-item" href="#">ANALYTICS</a>
+              <a class="dropdown-item" href="#">TESTING</a>
+              <a class="dropdown-item" href="#">INFRASTRUCTURE</a>
+            </ul>
+          </li>
+          <li class="lists"><a href="#a">TEXAS-DIR</a></li>
+          <li class="lists"><a href="#s">CAREERS</a></li>
+          <li class="lists"><a href="#v">CONTACT US</a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
@@ -70,23 +103,23 @@
       </div>
 
       <div class="d-md-flex pt-4 col-md-12 justify-content-center">
-        <div class="col-md-2 col-sm-12 mt-4 ml-md-4 pl-md-4 pt-md-4 competency-box">
+        <div class="col-md-2 col-sm-12 mt-4 ml-md-4 mr-md-4 pl-md-4 pt-md-4 competency-box">
           <img class="competency" src="./assets/img/Competency/Digital.svg">
           <div class="digital">Digital</div>
         </div>
-        <div class="col-md-2 col-sm-12 mt-4  ml-md-4 pl-md-4 pt-md-4 competency-box-cloud">
+        <div class="col-md-2 col-sm-12 mt-4  ml-md-4 mr-md-4 pl-md-4 pt-md-4 competency-box-cloud">
           <img class="competency" src="./assets/img/Competency/Cloud.svg">
           <div class="cloud">Cloud</div>
         </div>
-        <div class="col-md-2 col-sm-12 mt-4 ml-md-4 pl-md-4 pt-md-4 competency-box-testing">
+        <div class="col-md-2 col-sm-12 mt-4 ml-md-4 mr-md-4 pl-md-4 pt-md-4 competency-box-testing">
           <img class="competency" src="./assets/img/Competency/Testing.svg">
           <div class="testing">Testing</div>
         </div>
-        <div class="col-md-2 col-sm-12 mt-4 ml-md-4 pl-md-4 pt-md-4 competency-box-analytics">
+        <div class="col-md-2 col-sm-12 mt-4 ml-md-4 mr-md-4 pl-md-4 pt-md-4 competency-box-analytics">
           <img class="competency" src="./assets/img/Competency/Analytics.svg">
           <div class="analytics">Analytics</div>
         </div>
-        <div class="col-md-2 col-sm-12 mt-4 ml-md-4 pl-md-4 pt-md-4 competency-box-infrastructure">
+        <div class="col-md-2 col-sm-12 mt-4 ml-md-4 mr-md-4 pl-md-4 pt-md-4 competency-box-infrastructure">
           <img class="competency" src="./assets/img/Competency/Infrastructure.svg">
           <div class="infrastructure">Infrastructure</div>
         </div>
@@ -95,15 +128,14 @@
 
     <div class="staffing-bg">
       <div class="headline">
-        <h1 class="header-text">Staffing</h1>
+        <h1 class="header-text">Staffing & Recruitment</h1>
         <p class="pb-4"></p>
       </div>
       <div class="d-md-flex pt-4 justify-content-center">
-        <div class="col-md-2 col-sm-12 mt-4 ml-md-4 pl-4 pt-4 competency-box-contract">
+        <div class="col-md-2 col-sm-12 mt-4 mr-md-4 pl-4 pt-4 competency-box-contract">
           <img class="competency" src="./assets/img/IT Contract Staffing.svg">
           <div class="contract-staff">IT Contract Staffing</div>
         </div>
-        <div class="col-md-2"></div>
         <div class="col-md-2 col-sm-12 mt-4 ml-md-4 pl-4 pt-4 competency-box-hire">
           <img class="competency" src="./assets/img/Full-time Hiring.svg">
           <div class="hiring">Full-time Hiring</div>
@@ -162,26 +194,25 @@
     <section id="about" class="about section-bg">
       <div class="container" data-aos="fade-up">
         <div class="row">
-          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-7 col-md-7 pt-4 pt-lg-0 content d-flex flex-column" data-aos="fade-up"
+            data-aos-delay="100">
             <h2 class="solution-staff mb-4 pb-4">Full Service IT Solutions & staffing Company </h2>
             <!-- <p class="font-italic"> -->
             <p>
               ClarusTec Inc. is a full-service IT Solutions & Staffing company delivering services to the Government
-              Sector (Federal,
-              State, City, County, Local Agencies), non-profits, and educational institutions and full-time
-              recruitment
-              services for
-              enterprises.
+              Sector within
+              Federal, States, Cities, Counties, Local Agencies, Non-Profits, and Educational Institutions as well as
+              full-time
+              recruitment services for commercial enterprises.
             </p>
             <p>
-              We adopt a customer-focused approach to deliver results that our customers can count on. We
-              have served as
-              a trusted partner for Government. agencies for over 10 years with various productive relationships and
-              more than 20
-              running contracts in use.
+              We adopt a customer-focused approach to deliver results that our
+              customers can count on. We have served as a trusted partner for Government Agencies for over 10 years with
+              various
+              productive relationships and have more than 20+ Technology Contract Vehicles.
             </p>
           </div>
-          <div class="col-lg-6 image-border" data-aos="zoom-out" data-aos-delay="100">
+          <div class="col-lg-5 col-md-5 image-border" data-aos="zoom-out" data-aos-delay="100">
             <img src="assets/img/about.png" class="img-fluid" alt="">
           </div>
         </div>
@@ -243,12 +274,14 @@
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
+          <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+          <!-- <span class="sr-only">Previous</span> -->
+          <img src="assets/img/L-Arrow.png" />
         </a>
         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
+          <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+          <!-- <span class="sr-only">Next</span> -->
+          <img src="assets/img/R-Arrow.png" />
         </a>
       </div>
     </div>
@@ -289,10 +322,10 @@
           </div>
 
         </div>
-        <a class="left carousel-control" href="#carousel-tilenav" data-slide="prev"><i
-            class="glyphicon glyphicon-chevron-left"></i></a>
-        <a class="right carousel-control" href="#carousel-tilenav" data-slide="next"><i
-            class="glyphicon glyphicon-chevron-right"></i></a>
+        <a class="left carousel-control" href="#carousel-tilenav" data-slide="prev"><img
+            src="assets/img/L-Arrow.png" /></a>
+        <a class="right carousel-control" href="#carousel-tilenav" data-slide="next"><img
+            src="assets/img/R-Arrow.png" /></a>
       </div>
     </section><!-- End Clients Section -->
 

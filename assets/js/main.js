@@ -60,28 +60,36 @@
   });
 
   // Navigation active state on scroll
-  var nav_sections = $('section');
-  var main_nav = $('.nav-menu, .mobile-nav');
+  // var nav_sections = $('section');
+  // var main_nav = $('.nav-menu, .mobile-nav');
 
-  $(window).on('scroll', function() {
-    var cur_pos = $(this).scrollTop() + 200;
+  // $(window).on('scroll', function() {
+  //   var cur_pos = $(this).scrollTop() + 200;
 
-    nav_sections.each(function() {
-      var top = $(this).offset().top,
-        bottom = top + $(this).outerHeight();
+  //   nav_sections.each(function() {
+  //     var top = $(this).offset().top,
+  //       bottom = top + $(this).outerHeight();
 
-      if (cur_pos >= top && cur_pos <= bottom) {
-        if (cur_pos <= bottom) {
-          main_nav.find('li').removeClass('active');
-        }
-        main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
-      }
-      if (cur_pos < 300) {
-        $(".nav-menu ul:first li:first, .mobile-menu ul:first li:first").addClass('active');
-      }
-    });
+  //     if (cur_pos >= top && cur_pos <= bottom) {
+  //       if (cur_pos <= bottom) {
+  //         main_nav.find('li').removeClass('active');
+  //       }
+  //       main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
+  //     }
+  //     if (cur_pos < 300) {
+  //       $(".nav-menu ul:first li:first, .mobile-menu ul:first li:first").addClass('active');
+  //     }
+  //   });
+  // });
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("lists");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
   });
-
+}
   // Mobile Navigation
   if ($('.nav-menu').length) {
     var $mobile_nav = $('.nav-menu').clone().prop({
@@ -214,3 +222,24 @@
   });
 
 })(jQuery);
+
+$('#carouselExample').on('slide.bs.carousel', function (e) {
+
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 4;
+    var totalItems = $('.carousel-item').length;
+    
+    if (idx >= totalItems-(itemsPerSlide-1)) {
+        var it = itemsPerSlide - (totalItems - idx);
+        for (var i=0; i<it; i++) {
+            // append slides to end
+            if (e.direction=="left") {
+                $('.carousel-item').eq(i).appendTo('.carousel-inner');
+            }
+            else {
+                $('.carousel-item').eq(0).appendTo('.carousel-inner');
+            }
+        }
+    }
+});

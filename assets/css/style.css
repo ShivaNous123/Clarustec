@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: -18px;
   left: 0;
-  background-color: orange;
+  background-color: #F69322;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -257,11 +257,11 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .active > a:before {
   visibility: visible;
   width: 100%;
-  top: 38px;
+  top: 40px;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: none;
+  color: #F69322;
 }
 
 .nav-menu .drop-down ul {
@@ -511,7 +511,7 @@ margin: 2rem 0 0 0;
   right: 0;
   margin: auto;
   display: block;
-  width: 70px;
+  width: 91px;
   border-bottom: 3px solid #FF8800;
   content: "";
 }
@@ -529,10 +529,12 @@ margin: 2rem 0 0 0;
 h1.header-text {
   text-align: center;
   margin-bottom: 2rem;
-  font-size: 55px;
-  font-family: SegoeUI;
+  font-size: 48px;
+  font-family: SegoeUI-Bold;
 }
-
+.nav-fam{
+font-family: SegoeUI-Semibold;
+}
 .competency-box{
 background: #FFFFFF 0% 0% no-repeat padding-box;
 box-shadow: 0px 0px 5px #D1D1D145;
@@ -654,7 +656,7 @@ color: #FFFFFF;
 .num-text{
   color: #ffffff;
   font-size: 80px;
-    font-family: SegoeUI-Semilight;
+    font-family: SegoeUI-Semilight !important;
 }
 .carousel-control-next-icon, .carousel-control-prev-icon{
   width:50px;
@@ -686,11 +688,14 @@ font-size: 26px;
     bottom: 0;
     background: #363639;
     opacity: 0.8;
-
+}
+.fixed-top{
+  position: unset;
 }
 .news-text{
   text-align: center;
 letter-spacing: 0px;
+font-family: SegoeUI !important;
 color: #FFFFFF;
 }
 .tech-text{
@@ -746,7 +751,7 @@ color: #FFFFFF;
 opacity: 1;
 }
 .hero-head{
-  max-width: 745px;
+  max-width: 825px;
   margin-left:100px;
 }
 #hero .btn-get-started:hover {
@@ -784,7 +789,7 @@ opacity: 1;
 @media (min-width: 1024px) {
   #hero {
     /* background-attachment: fixed; */
-    height: 100vh;
+    height: 119vh;
   }
 }
 
@@ -2023,7 +2028,78 @@ background-color: #232323;
   }
 }
 
-.image-border{
-padding: 10px;
+/* .image-border{
+    padding: 10px;
     border: 1px solid #D6DADA;
+} */
+
+.dropdown-toggle::after{
+  display: none;
+} 
+.dropdown-menu-center {
+    right: auto !important;
+    top: 50px !important;
+    left: 50% !important;
+    -webkit-transform: translate(-50%, 0) !important;
+    -o-transform: translate(-50%, 0) !important;
+    transform: translate(-50%, 0) !important;
+    border-top: 3px solid #F69322; ;
+    border-radius: 0;
+}
+.form-row>.col, .form-row>[class*=col-] {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.contact .php-email-form {
+    box-shadow: none;
+}
+
+@font-face {
+    font-family: SegoeUI-Light;
+    src:
+        local("Segoe UI Light"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: SegoeUI-Semilight;
+    src:
+        local("Segoe UI Semilight"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: SegoeUI;
+    src:
+        local("Segoe UI"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: SegoeUI-Bold;
+    src:
+        local("Segoe UI Bold"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: SegoeUI-Semibold;
+    src:
+        local("Segoe UI Semibold"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
+    font-weight: 700;
 }
